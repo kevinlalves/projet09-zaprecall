@@ -5,7 +5,7 @@ export default function Result(props) {
   const { sessionState } = props;
 
   return (
-    <ResultContent>
+    <ResultContent data-test="finish-text">
       <p>{resultTitles[sessionState]}</p>
       <p>{resultMessages[sessionState]}</p>
     </ResultContent>

@@ -1,16 +1,18 @@
 import styled from "styled-components";
-import { images } from "../enums";
+import { images, dataTests } from "../enums";
 
 export default function Footer(props) {
   const { answeredCards, numCards, children } = props;
 
   return (
-    <FooterContent>
+    <FooterContent data-test="footer">
       {children}
       <p>{answeredCards.length}/{numCards} CONCLUÍDOS</p>
       <AnsweredCards>
         {answeredCards.length > 0
-          && answeredCards.map((answer, idx) => <img src={images[answer]} key={idx} alt="answer type" />)}
+          && answeredCards.map((answer, idx) =>
+            <img data-test={dataTests[answer]} src={images[answer]} key={idx} alt="answer type" />)
+        }
       </AnsweredCards>
     </FooterContent>
   );

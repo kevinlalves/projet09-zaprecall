@@ -19,14 +19,14 @@ export default function FaceDownCard(props) {
 
   return (
     <FaceDownContent>
-      <p>{showAnswer ? card.answer : card.question}</p>
+      <p data-test="flashcard-text">{showAnswer ? card.answer : card.question}</p>
       <ChooseResult showAnswer={showAnswer}>
-        <button onClick={() => chooseResult(cardStates.wrong)}>{result.wrong}</button>
-        <button onClick={() => chooseResult(cardStates.delayed)}>{result.delayed}</button>
-        <button onClick={() => chooseResult(cardStates.zap)}>{result.zap}</button>
+        <button data-test="no-btn" onClick={() => chooseResult(cardStates.wrong)}>{result.wrong}</button>
+        <button data-test="partial-btn" onClick={() => chooseResult(cardStates.delayed)}>{result.delayed}</button>
+        <button data-test="zap-btn" onClick={() => chooseResult(cardStates.zap)}>{result.zap}</button>
       </ChooseResult>
       <TapImage showAnswer={showAnswer}>
-        <img src={tap} alt="tap card" onClick={() => setShowAnswer(true)} />
+        <img data-test="turn-btn" src={tap} alt="tap card" onClick={() => setShowAnswer(true)} />
       </TapImage>
     </FaceDownContent>
   );

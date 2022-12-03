@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { cardStates } from "../enums";
-import { colors, images } from "../enums";
+import { colors, images, dataTests } from "../enums";
 
 
 
@@ -10,8 +10,9 @@ export default function FaceUpCard(props) {
 
   return (
     <FaceUpContent state={state}>
-      <p>Pergunta {cardNumber}</p>
+      <p data-test="flashcard-text">Pergunta {cardNumber}</p>
       <img
+        data-test={dataTests[state]}
         src={images[state]}
         alt="start question"
         onClick={state === cardStates.unanswered ? () => setState(cardStates.answering) : undefined}

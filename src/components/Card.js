@@ -10,7 +10,7 @@ export default function Card(props) {
   const [state, setState] = useState(cardStates.unanswered);
 
   return (
-    <CardContent state={state}>
+    <CardContent data-test="flashcard" state={state}>
       {state === cardStates.answering
         ? <FaceDownCard
           card={card}

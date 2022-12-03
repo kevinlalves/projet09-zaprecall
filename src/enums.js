@@ -46,4 +46,11 @@ const resultMessages = Object.freeze({
   failed: "Ainda falta alguns... Mas não desanime!"
 });
 
-export { colors, images, result, cardStates, sessionStates, resultTitles, resultMessages };
+const dataTests = Object.freeze({
+  unanswered: "play-btn",
+  wrong: "no-icon",
+  delayed: "partial-icon",
+  zap: "zap-icon"
+});
+
+export { colors, images, result, cardStates, sessionStates, resultTitles, resultMessages, dataTests };

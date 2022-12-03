@@ -8,7 +8,7 @@ export default function HomeScreen(props) {
     <HomeContent>
       <img src={logo} alt="logo" />
       <p>ZapRecall</p>
-      <button onClick={() => setStartSession(true)}>Iniciar Recall!</button>
+      <button data-test="start-btn" onClick={() => setStartSession(true)}>Iniciar Recall!</button>
     </HomeContent>
   );
 }
