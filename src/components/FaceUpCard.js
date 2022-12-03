@@ -30,5 +30,6 @@ const FaceUpContent = styled.div`
   padding-right: 20px;
   background-color: white;
   text-decoration: ${props => props.state === cardStates.unanswered ? "none" : "line-through"};
-  color: ${props => colors[props.state]}
+  color: ${props => colors[props.state]};
+  font-weight: 700;
 `;

@@ -26,7 +26,7 @@ const HomeContent = styled.div`
   }
   p {
     margin-top: 13px;
-    font-family: "Righteous", cursive;
+    font-family: "Righteous", cursive !important;
     font-size: 36px;
     color: white;
   }
@@ -40,6 +40,5 @@ const HomeContent = styled.div`
     border-radius: 5px;
     color: #D70900;
     font-size: 18px;
-    font-family: "Recursive", sans-serif;
   }
 `;

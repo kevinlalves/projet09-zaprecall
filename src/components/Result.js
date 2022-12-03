@@ -21,7 +21,6 @@ const ResultContent = styled.div`
   height: 101px;
   bottom: 70px;
   background-color: white;
-  font-family: "Recursive", sans-serif;
   font-size: 18px;
   p:nth-child(1) {
     margin-top: 16px;

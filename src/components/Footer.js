@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { images } from "../enums";
 
 export default function Footer(props) {
-  const { answeredCards, numCards } = props;
+  const { answeredCards, numCards, children } = props;
 
   return (
     <FooterContent>
+      {children}
       <p>{answeredCards.length}/{numCards} CONCLUÍDOS</p>
       <AnsweredCards>
         {answeredCards.length > 0
@@ -26,7 +27,7 @@ const FooterContent = styled.div`
   justify-content: center;
   flex-direction: column;
   font-size: 18px;
-  font-family: "Recursive", sans-serif;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 `;
 
 const AnsweredCards = styled.div`

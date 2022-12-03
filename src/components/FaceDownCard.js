@@ -48,7 +48,6 @@ const TapImage = styled.div`
 
 const FaceDownContent = styled.div`
   background-color: white;
-  font-family: "Recursive", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;

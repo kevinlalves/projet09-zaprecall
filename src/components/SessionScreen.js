@@ -20,8 +20,9 @@ export default function SessionScreen(props) {
         setAnsweredCards={setAnsweredCards}
         setSessionState={setSessionState}
       />
-      {answeredCards.length === cards.length && <Result sessionState={sessionState} />}
-      <Footer answeredCards={answeredCards} numCards={cards.length} />
+      <Footer answeredCards={answeredCards} numCards={cards.length}>
+        <>{answeredCards.length === cards.length && <Result sessionState={sessionState} />}</>
+      </Footer>
     </SessionContent>
   );
 }

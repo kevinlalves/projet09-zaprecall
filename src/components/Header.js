@@ -24,6 +24,6 @@ const HeaderContent = styled.div`
     color: white;
     width: 204px;
     text-align: center;
-    font-family: "Righteous", cursive;
+    font-family: "Righteous", cursive !important;
   }
 `;
