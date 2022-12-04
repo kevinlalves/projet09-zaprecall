@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Card from "./Card";
 
 export default function Cards(props) {
-  const { answeredCards, setAnsweredCards, cards, setSessionState } = props
+  const { answeredCards, setAnsweredCards, cards, setSessionState } = props;
 
   return (
     <CardsContent>

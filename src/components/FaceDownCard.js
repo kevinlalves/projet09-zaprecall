@@ -15,7 +15,7 @@ export default function FaceDownCard(props) {
     if (state === cardStates.wrong) {
       setSessionState(sessionStates.failed);
     }
-  }
+  };
 
   return (
     <FaceDownContent>
